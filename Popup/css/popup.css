@@ -1,0 +1,130 @@
+/* 解决高度塌陷 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal .container{
+    width: 430px;
+    height: 330px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.modal .container .close{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    background-color: #008c8c;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal .container .login-top-img{
+    width: 100%;
+    height: 180px;
+    background-image: url(../img/login-top.jpg);
+    background-position: 43% 59%;
+}
+
+.modal .container .login-bottom{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+} 
+
+.modal .container .login-bottom .left{
+    float: left;
+    width: 125px;
+    height: 100%;
+    /* background-color: #008c8c; */
+}
+
+.modal .container .login-bottom .center{
+    float: left;
+    margin: 10px 10px;
+    width: 195px;
+    height: 130px;
+    /* background-color: #ccc; */
+}
+
+.modal .container .login-bottom .right{
+    float: left;
+    width: 90px;
+    height: 100%;
+    /* background-color: #f40; */
+}
+
+.modal .container .login-bottom .left img{
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 41px;
+    bottom: 56px;
+}
+
+
+.modal .container .login-bottom .center form .user,
+.modal .container .login-bottom .center form .password{
+    height: 30px;
+    width: 100%;
+}
+
+
+.modal .container .login-bottom .center form .radio-item{
+    height: 14px;
+    width: 100%;
+    margin: 13px 0;
+}
+
+
+
+.modal .container .login-bottom .center form .submit{
+    height: 30px;
+    width: 100%;
+    color: #008c8c;
+}
+
+
+.modal .container .login-bottom .right .register,
+.modal .container .login-bottom .right .get-back-password{
+    font-family: 楷体, consolas, sans-serif;
+    height: 30px;
+    width: 100%;
+    text-align: left;  
+    line-height: 30px; 
+    color: #008c8c; 
+}
+
+
+.modal .container .login-bottom .right .register{
+    margin-top: 10px;
+}
